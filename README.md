@@ -8,5 +8,6 @@
 
 ## In GCP Free trial account we have to create Cloud Composer 3 since the Cloud Composer 2 will fail to create (Error was regarding pods not created because of quota limitations in free trial account): https://stackoverflow.com/questions/78597995/google-cloud-composer-creation-failing-for-all-types-of-environment-sizes-and-ve
 
-## We have to put our file in DAG folder also mention twilio and pandas in PyPI Packages option present in Conposer UI
+## We have to put our file in DAG folder also mention twilio, pandas and google-cloud-bigquery in PyPI Packages option present in Conposer UI
 
+## Make sure to add "openweather_api_key", "recipient_phone_number", "twilio_account_sid", "twilio_auth_token" and "twilio_phone_number" variables in airflow url (refer the attached screenshots)
