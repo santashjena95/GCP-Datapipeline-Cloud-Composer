@@ -11,3 +11,5 @@
 ## We have to put our file in DAG folder also mention twilio, pandas and google-cloud-bigquery in PyPI Packages option present in Conposer UI
 
 ## Make sure to add "openweather_api_key", "recipient_phone_number", "twilio_account_sid", "twilio_auth_token" and "twilio_phone_number" variables in airflow url (refer the attached screenshots)
+
+## If this is the first time you are creating composer in the gcp project, then remember to grant the Cloud Composer v2 API Service Agent Extension role to the Cloud Composer Service Agent service account
