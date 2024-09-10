@@ -3,3 +3,5 @@
 ## Note: https://medium.com/apache-airflow/%EF%B8%8Fgcp-data-engineering-project-automating-weather-forecast-sms-notifications-with-composer-airflow-a667feaee19f
 
 ## Note: https://github.com/janaom/gcp-de-project-weather-forecast-sms-with-airflow/tree/main
+
+## We will need twilio account and openweather account for this pipeline setup
