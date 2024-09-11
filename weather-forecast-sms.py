@@ -97,13 +97,13 @@ def get_weather_data_and_send_sms(country, city):
 default_args = {
     "owner": "airflow",
     "depends_on_past": False,
-    "start_date": datetime(2023, 1, 1),
+    "start_date": datetime(2024, 09, 11),
     "retries": 1,
     "retry_delay": timedelta(minutes=5),
 }
 
 dag = DAG(
-    "weather_update_sms",
+    "weather_forecast_sms",
     default_args=default_args,
     schedule_interval="0 7 * * *",  #Run daily at 07:00 AM UTC
     catchup=False,
