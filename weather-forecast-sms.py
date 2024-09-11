@@ -1,10 +1,10 @@
-from datetime import datetime, timedelta
+from datetime import timedelta
+import airflow
 from airflow import DAG
 from airflow.operators.python_operator import PythonOperator
 from airflow.providers.google.cloud.hooks.gcs import GCSHook
 from airflow.models import Variable
 import requests
-import json
 from twilio.rest import Client
 from airflow.utils.trigger_rule import TriggerRule
 from google.cloud import bigquery
@@ -97,7 +97,7 @@ def get_weather_data_and_send_sms(country, city):
 default_args = {
     "owner": "airflow",
     "depends_on_past": False,
-    "start_date": datetime(2024, 09, 11),
+    "start_date": airflow.utils.dates.days_ago(0),
     "retries": 1,
     "retry_delay": timedelta(minutes=5),
 }
