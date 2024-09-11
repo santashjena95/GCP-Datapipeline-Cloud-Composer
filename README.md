@@ -14,4 +14,4 @@
 
 ## If this is the first time you are creating composer in the gcp project, then remember to grant the Cloud Composer v2 API Service Agent Extension role to the Cloud Composer Service Agent service account
 
-## NOTE: When we create Cloud Composer 2 it creates Kubernetes Cluster and in free trial that exceeds quota and results in Composer failure but in Cloud COmposer 3 it doesn't create kubernetes cluster hence we are able to create composer 3 environment
+## NOTE: When we create Cloud Composer 2 it creates Kubernetes Cluster and in free trial that exceeds quota and results in Composer failure but in Cloud Composer 3 it doesn't create kubernetes cluster hence we are able to create composer 3 environment in free trial account
