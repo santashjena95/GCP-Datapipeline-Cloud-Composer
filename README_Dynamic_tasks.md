@@ -1,0 +1,1 @@
+We cannot run Python operator as "gcs_move.execute(context=None)" because we will get "AttributeError: 'NoneType' object has no attribute 'update'" error. Bt we can use it with "GoogleCloudStorageToGoogleCloudStorageOperator" and "GoogleCloudStorageDownloadOperator" operators
